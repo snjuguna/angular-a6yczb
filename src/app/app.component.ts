@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule, Routes} from '@angular/router';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  preventDefault(){
+    event.preventDefault();
+  }
+  onClick(event:Event){
+    event.preventDefault();
+  }
 }
+
